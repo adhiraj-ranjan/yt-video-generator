@@ -1,0 +1,4 @@
+flask
+moviepy
+flask_socketio
+pytube
