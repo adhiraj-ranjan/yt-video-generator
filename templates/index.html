@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Video Processor</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+    <body>
+        <h1>Youtube Video Processor</h1>
+        <form>
+            <div>
+                <label for="youtube-link">Youtube Link:</label>
+                <input type="text" id="youtube-link" required>
+            </div>
+            <div>
+                <label for="image-upload">Image:</label>
+                <input type="file" id="image-upload" required>
+            </div>
+            <div>
+                <button type="button" id="process-button">Process</button>
+            </div>
+        </form>
+        <div id="logs">
+        </div>
+        <br><br>
+        <div>
+            <a href="{{ url_for('download_file') }}"><button type="button" id="download-button">Download</button></a>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+        <script src="static/index.js"></script>
+    </body>
+</html>
